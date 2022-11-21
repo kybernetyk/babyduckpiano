@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		204EBE72292BE79B001504A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204EBE71292BE79B001504A3 /* AppDelegate.swift */; };
 		204EBE74292BE79B001504A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204EBE73292BE79B001504A3 /* SceneDelegate.swift */; };
-		204EBE76292BE79B001504A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204EBE75292BE79B001504A3 /* ViewController.swift */; };
+		204EBE76292BE79B001504A3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204EBE75292BE79B001504A3 /* MainViewController.swift */; };
 		204EBE79292BE79B001504A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 204EBE77292BE79B001504A3 /* Main.storyboard */; };
 		204EBE7B292BE79C001504A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 204EBE7A292BE79C001504A3 /* Assets.xcassets */; };
 		204EBE7E292BE79C001504A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 204EBE7C292BE79C001504A3 /* LaunchScreen.storyboard */; };
+		204EBE88292BE866001504A3 /* PianoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204EBE87292BE866001504A3 /* PianoView.swift */; };
+		204EBE8C292BEAD7001504A3 /* PianoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204EBE8A292BEAD7001504A3 /* PianoViewController.swift */; };
+		204EBE8D292BEAD7001504A3 /* PianoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 204EBE8B292BEAD7001504A3 /* PianoViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		204EBE6E292BE79B001504A3 /* Baby Duck Piano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Baby Duck Piano.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		204EBE71292BE79B001504A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		204EBE73292BE79B001504A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		204EBE75292BE79B001504A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		204EBE75292BE79B001504A3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		204EBE78292BE79B001504A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		204EBE7A292BE79C001504A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		204EBE7D292BE79C001504A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		204EBE7F292BE79C001504A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		204EBE87292BE866001504A3 /* PianoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoView.swift; sourceTree = "<group>"; };
+		204EBE8A292BEAD7001504A3 /* PianoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoViewController.swift; sourceTree = "<group>"; };
+		204EBE8B292BEAD7001504A3 /* PianoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PianoViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,42 @@
 		204EBE70292BE79B001504A3 /* Baby Duck Piano */ = {
 			isa = PBXGroup;
 			children = (
+				204EBE89292BEAC6001504A3 /* Piano View */,
+				204EBE86292BE81A001504A3 /* Boilerplate */,
+				204EBE85292BE80E001504A3 /* Main View */,
 				204EBE71292BE79B001504A3 /* AppDelegate.swift */,
-				204EBE73292BE79B001504A3 /* SceneDelegate.swift */,
-				204EBE75292BE79B001504A3 /* ViewController.swift */,
-				204EBE77292BE79B001504A3 /* Main.storyboard */,
-				204EBE7A292BE79C001504A3 /* Assets.xcassets */,
-				204EBE7C292BE79C001504A3 /* LaunchScreen.storyboard */,
 				204EBE7F292BE79C001504A3 /* Info.plist */,
 			);
 			path = "Baby Duck Piano";
+			sourceTree = "<group>";
+		};
+		204EBE85292BE80E001504A3 /* Main View */ = {
+			isa = PBXGroup;
+			children = (
+				204EBE77292BE79B001504A3 /* Main.storyboard */,
+				204EBE75292BE79B001504A3 /* MainViewController.swift */,
+			);
+			path = "Main View";
+			sourceTree = "<group>";
+		};
+		204EBE86292BE81A001504A3 /* Boilerplate */ = {
+			isa = PBXGroup;
+			children = (
+				204EBE73292BE79B001504A3 /* SceneDelegate.swift */,
+				204EBE7A292BE79C001504A3 /* Assets.xcassets */,
+				204EBE7C292BE79C001504A3 /* LaunchScreen.storyboard */,
+			);
+			path = Boilerplate;
+			sourceTree = "<group>";
+		};
+		204EBE89292BEAC6001504A3 /* Piano View */ = {
+			isa = PBXGroup;
+			children = (
+				204EBE87292BE866001504A3 /* PianoView.swift */,
+				204EBE8A292BEAD7001504A3 /* PianoViewController.swift */,
+				204EBE8B292BEAD7001504A3 /* PianoViewController.xib */,
+			);
+			path = "Piano View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +160,7 @@
 			files = (
 				204EBE7E292BE79C001504A3 /* LaunchScreen.storyboard in Resources */,
 				204EBE7B292BE79C001504A3 /* Assets.xcassets in Resources */,
+				204EBE8D292BEAD7001504A3 /* PianoViewController.xib in Resources */,
 				204EBE79292BE79B001504A3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,7 +172,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				204EBE76292BE79B001504A3 /* ViewController.swift in Sources */,
+				204EBE88292BE866001504A3 /* PianoView.swift in Sources */,
+				204EBE8C292BEAD7001504A3 /* PianoViewController.swift in Sources */,
+				204EBE76292BE79B001504A3 /* MainViewController.swift in Sources */,
 				204EBE72292BE79B001504A3 /* AppDelegate.swift in Sources */,
 				204EBE74292BE79B001504A3 /* SceneDelegate.swift in Sources */,
 			);
@@ -290,11 +326,12 @@
 				DEVELOPMENT_TEAM = V4B772B3P8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Baby Duck Piano/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.kids-games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeRight;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -318,11 +355,12 @@
 				DEVELOPMENT_TEAM = V4B772B3P8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Baby Duck Piano/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.kids-games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeRight;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

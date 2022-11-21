@@ -121,7 +121,6 @@ extension PianoView {
 	}
 
 	override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-		NSLog("\(touches.count)")
 		for touch in touches {
 			let tapPoint = touch.location(in: self)
 			if let keyIndex = self.keyIndexForClickPoint(point: tapPoint) {
@@ -133,7 +132,6 @@ extension PianoView {
 	}
 
 	override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-		NSLog("\(touches.count)")
 		for touch in touches {
 			let prevTapPoint = touch.previousLocation(in: self)
 			if let prevKeyIndex = self.keyIndexForClickPoint(point: prevTapPoint) {
@@ -152,7 +150,6 @@ extension PianoView {
 	}
 
 	override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-		NSLog("\(touches.count)")
 		for touch in touches {
 			let tapPoint = touch.location(in: self)
 			if let keyIndex = self.keyIndexForClickPoint(point: tapPoint) {

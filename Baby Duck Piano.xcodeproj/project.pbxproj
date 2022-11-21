@@ -16,6 +16,14 @@
 		204EBE88292BE866001504A3 /* PianoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204EBE87292BE866001504A3 /* PianoView.swift */; };
 		204EBE8C292BEAD7001504A3 /* PianoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204EBE8A292BEAD7001504A3 /* PianoViewController.swift */; };
 		204EBE8D292BEAD7001504A3 /* PianoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 204EBE8B292BEAD7001504A3 /* PianoViewController.xib */; };
+		20ACF720292C03F600B52186 /* 3.aif in Resources */ = {isa = PBXBuildFile; fileRef = 20ACF718292C03F600B52186 /* 3.aif */; };
+		20ACF721292C03F600B52186 /* 5.aif in Resources */ = {isa = PBXBuildFile; fileRef = 20ACF719292C03F600B52186 /* 5.aif */; };
+		20ACF722292C03F600B52186 /* 0.aif in Resources */ = {isa = PBXBuildFile; fileRef = 20ACF71A292C03F600B52186 /* 0.aif */; };
+		20ACF723292C03F600B52186 /* 6.aif in Resources */ = {isa = PBXBuildFile; fileRef = 20ACF71B292C03F600B52186 /* 6.aif */; };
+		20ACF724292C03F600B52186 /* 7.aif in Resources */ = {isa = PBXBuildFile; fileRef = 20ACF71C292C03F600B52186 /* 7.aif */; };
+		20ACF725292C03F600B52186 /* 4.aif in Resources */ = {isa = PBXBuildFile; fileRef = 20ACF71D292C03F600B52186 /* 4.aif */; };
+		20ACF726292C03F600B52186 /* 2.aif in Resources */ = {isa = PBXBuildFile; fileRef = 20ACF71E292C03F600B52186 /* 2.aif */; };
+		20ACF727292C03F600B52186 /* 1.aif in Resources */ = {isa = PBXBuildFile; fileRef = 20ACF71F292C03F600B52186 /* 1.aif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +38,14 @@
 		204EBE87292BE866001504A3 /* PianoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoView.swift; sourceTree = "<group>"; };
 		204EBE8A292BEAD7001504A3 /* PianoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoViewController.swift; sourceTree = "<group>"; };
 		204EBE8B292BEAD7001504A3 /* PianoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PianoViewController.xib; sourceTree = "<group>"; };
+		20ACF718292C03F600B52186 /* 3.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3.aif; sourceTree = "<group>"; };
+		20ACF719292C03F600B52186 /* 5.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = 5.aif; sourceTree = "<group>"; };
+		20ACF71A292C03F600B52186 /* 0.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = 0.aif; sourceTree = "<group>"; };
+		20ACF71B292C03F600B52186 /* 6.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = 6.aif; sourceTree = "<group>"; };
+		20ACF71C292C03F600B52186 /* 7.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = 7.aif; sourceTree = "<group>"; };
+		20ACF71D292C03F600B52186 /* 4.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = 4.aif; sourceTree = "<group>"; };
+		20ACF71E292C03F600B52186 /* 2.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = 2.aif; sourceTree = "<group>"; };
+		20ACF71F292C03F600B52186 /* 1.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1.aif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +78,7 @@
 		204EBE70292BE79B001504A3 /* Baby Duck Piano */ = {
 			isa = PBXGroup;
 			children = (
+				20ACF717292C03E800B52186 /* sounds */,
 				204EBE89292BEAC6001504A3 /* Piano View */,
 				204EBE86292BE81A001504A3 /* Boilerplate */,
 				204EBE85292BE80E001504A3 /* Main View */,
@@ -98,6 +115,21 @@
 				204EBE8B292BEAD7001504A3 /* PianoViewController.xib */,
 			);
 			path = "Piano View";
+			sourceTree = "<group>";
+		};
+		20ACF717292C03E800B52186 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				20ACF71A292C03F600B52186 /* 0.aif */,
+				20ACF71F292C03F600B52186 /* 1.aif */,
+				20ACF71E292C03F600B52186 /* 2.aif */,
+				20ACF718292C03F600B52186 /* 3.aif */,
+				20ACF71D292C03F600B52186 /* 4.aif */,
+				20ACF719292C03F600B52186 /* 5.aif */,
+				20ACF71B292C03F600B52186 /* 6.aif */,
+				20ACF71C292C03F600B52186 /* 7.aif */,
+			);
+			path = sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,8 +190,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20ACF727292C03F600B52186 /* 1.aif in Resources */,
+				20ACF726292C03F600B52186 /* 2.aif in Resources */,
+				20ACF722292C03F600B52186 /* 0.aif in Resources */,
+				20ACF723292C03F600B52186 /* 6.aif in Resources */,
+				20ACF721292C03F600B52186 /* 5.aif in Resources */,
 				204EBE7E292BE79C001504A3 /* LaunchScreen.storyboard in Resources */,
 				204EBE7B292BE79C001504A3 /* Assets.xcassets in Resources */,
+				20ACF725292C03F600B52186 /* 4.aif in Resources */,
+				20ACF720292C03F600B52186 /* 3.aif in Resources */,
+				20ACF724292C03F600B52186 /* 7.aif in Resources */,
 				204EBE8D292BEAD7001504A3 /* PianoViewController.xib in Resources */,
 				204EBE79292BE79B001504A3 /* Main.storyboard in Resources */,
 			);

@@ -42,6 +42,15 @@ class PianoView : UIView {
 	]
 
 	weak var delegate: PianoViewDelegate? = nil
+	override init(frame: CGRect) {
+		super.init(frame: frame)
+		self.isMultipleTouchEnabled = true
+	}
+
+	required init?(coder aDecoder: NSCoder) {
+		super.init(coder: aDecoder)
+		self.isMultipleTouchEnabled = true
+	}
 
 	override func draw(_ rect: CGRect) {
 		UIColor.white.set()
@@ -112,6 +121,7 @@ extension PianoView {
 	}
 
 	override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+		NSLog("\(touches.count)")
 		for touch in touches {
 			let tapPoint = touch.location(in: self)
 			if let keyIndex = self.keyIndexForClickPoint(point: tapPoint) {
@@ -123,6 +133,7 @@ extension PianoView {
 	}
 
 	override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+		NSLog("\(touches.count)")
 		for touch in touches {
 			let prevTapPoint = touch.previousLocation(in: self)
 			if let prevKeyIndex = self.keyIndexForClickPoint(point: prevTapPoint) {
@@ -141,6 +152,7 @@ extension PianoView {
 	}
 
 	override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+		NSLog("\(touches.count)")
 		for touch in touches {
 			let tapPoint = touch.location(in: self)
 			if let keyIndex = self.keyIndexForClickPoint(point: tapPoint) {

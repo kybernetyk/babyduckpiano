@@ -32,6 +32,7 @@
 		20ACF735292C12A700B52186 /* 3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 20ACF72D292C12A700B52186 /* 3.mp3 */; };
 		20ACF736292C12A700B52186 /* 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 20ACF72E292C12A700B52186 /* 2.mp3 */; };
 		20ACF737292C12A700B52186 /* 4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 20ACF72F292C12A700B52186 /* 4.mp3 */; };
+		20ACF73A292CD31100B52186 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20ACF739292CD31100B52186 /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,8 @@
 		20ACF72D292C12A700B52186 /* 3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 3.mp3; sourceTree = "<group>"; };
 		20ACF72E292C12A700B52186 /* 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 2.mp3; sourceTree = "<group>"; };
 		20ACF72F292C12A700B52186 /* 4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 4.mp3; sourceTree = "<group>"; };
+		20ACF739292CD31100B52186 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		20ACF73B292CD3B600B52186 /* Baby Duck Piano.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Baby Duck Piano.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20ACF73A292CD31100B52186 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +84,7 @@
 			children = (
 				204EBE70292BE79B001504A3 /* Baby Duck Piano */,
 				204EBE6F292BE79B001504A3 /* Products */,
+				20ACF738292CD31100B52186 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +99,7 @@
 		204EBE70292BE79B001504A3 /* Baby Duck Piano */ = {
 			isa = PBXGroup;
 			children = (
+				20ACF73B292CD3B600B52186 /* Baby Duck Piano.entitlements */,
 				20ACF717292C03E800B52186 /* sounds */,
 				204EBE89292BEAC6001504A3 /* Piano View */,
 				204EBE86292BE81A001504A3 /* Boilerplate */,
@@ -154,6 +160,14 @@
 				20ACF71C292C03F600B52186 /* 7.aif */,
 			);
 			path = sounds;
+			sourceTree = "<group>";
+		};
+		20ACF738292CD31100B52186 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20ACF739292CD31100B52186 /* StoreKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -393,24 +407,26 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Baby Duck Piano/Baby Duck Piano.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V4B772B3P8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Baby Duck Piano/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Baby Duck Piano";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.kids-games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeRight;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.suborbital.Baby-Duck-Piano";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.suborbital.baby-duck.piano";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -423,24 +439,26 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Baby Duck Piano/Baby Duck Piano.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V4B772B3P8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Baby Duck Piano/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Baby Duck Piano";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.kids-games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeRight;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.suborbital.Baby-Duck-Piano";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.suborbital.baby-duck.piano";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

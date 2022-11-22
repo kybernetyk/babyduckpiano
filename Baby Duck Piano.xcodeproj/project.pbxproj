@@ -99,13 +99,13 @@
 		204EBE70292BE79B001504A3 /* Baby Duck Piano */ = {
 			isa = PBXGroup;
 			children = (
-				20ACF73B292CD3B600B52186 /* Baby Duck Piano.entitlements */,
 				20ACF717292C03E800B52186 /* sounds */,
 				204EBE89292BEAC6001504A3 /* Piano View */,
 				204EBE86292BE81A001504A3 /* Boilerplate */,
 				204EBE85292BE80E001504A3 /* Main View */,
 				204EBE71292BE79B001504A3 /* AppDelegate.swift */,
 				204EBE7F292BE79C001504A3 /* Info.plist */,
+				20ACF73B292CD3B600B52186 /* Baby Duck Piano.entitlements */,
 			);
 			path = "Baby Duck Piano";
 			sourceTree = "<group>";
@@ -426,7 +426,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.suborbital.baby-duck.piano";
+				PRODUCT_BUNDLE_IDENTIFIER = io.suborbital.babyduckpiano;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -458,7 +458,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.suborbital.baby-duck.piano";
+				PRODUCT_BUNDLE_IDENTIFIER = io.suborbital.babyduckpiano;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

@@ -6,12 +6,18 @@
 //
 
 import UIKit
+import StoreKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 	func application(_ application: UIApplication,
 					 didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 		// Override point for customization after application launch.
+		let launchCount = UserDefaults.standard.integer(forKey: "LAUNCHCOUNT") + 1
+		UserDefaults.standard.set(launchCount, forKey: "LAUNCHCOUNT")
+		if launchCount > 7 {
+			SKStoreReviewController.requestReview()
+		}
 		return true
 	}
 
